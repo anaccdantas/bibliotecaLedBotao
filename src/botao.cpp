@@ -30,7 +30,7 @@ void Botao::atualizar()
 
     if(tempoDecorrido() < _tempoDebounce_ms) return;
 
-    if(_estadoAtualBotao == _estadoAnteriorBotao) return;
+    if(_estadoAtualBotao == _estadoUltimaAcao) return;
 
     _estadoAnteriorBotao = _estadoAtualBotao;
 
